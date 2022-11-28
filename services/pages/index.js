@@ -5,13 +5,6 @@ import styles from "../styles/Home.module.css";
 export default function Home() {
   return (
     <div className={styles.container}>
-      <div className={styles.head}>
-        <h1>
-          Welcome to SERVICES PAGE
-          {/* will change to the correct title later on */}
-        </h1>
-      </div>
-
       {/* <main className={styles.main}>
 
         <div className={styles.grid}>
@@ -21,7 +14,14 @@ export default function Home() {
         </div> 
       </main> */}
 
-      <section className={styles.bubble}>
+      <section className={styles.welcome}>
+        <h1 className={styles.welcomeTitle}>
+          Welcome to SERVICES PAGE
+          {/* will change to the correct title later on */}
+        </h1>
+      </section>
+
+      <section className={styles.cw}>
         <h2>Car wash</h2>
         <p>
           This is the car wash section here we will contain link to other page
@@ -36,8 +36,8 @@ export default function Home() {
           page about this topic
         </p>
       </section>
-      
-      <section className={styles.spacer}>
+
+      <section className={styles.ele}>
         <h2>Electrician</h2>
         <p>
           This is the Electrician section here we will contain link to other
