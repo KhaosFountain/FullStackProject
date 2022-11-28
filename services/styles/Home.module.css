@@ -1,5 +1,7 @@
 .container {
-  padding: 0 2rem;
+  background-color: #202731;
+  color: white;
+  text-align: center;
 }
 
 .main {
@@ -128,8 +130,172 @@
   }
 }
 
-
-.head{
-  text-align: center;
-  font-size: 25px;
+.section {
+  margin: 0;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 800px;
+  padding: 100px 20vw;
+  background-color: #202731;
 }
+
+.cw {
+  margin: 0;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 970px;
+
+  aspect-ratio: 960/300;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url("./layer2.svg");
+}
+
+.valet{
+  display: flex;
+  flex-direction: row;
+
+  gap: 200px;
+  
+}
+
+.valettext{
+  text-align: left;
+
+  align-self: center;
+}
+
+.valetimage{
+  width: 900px;
+  height: 500px;
+  margin-left: -17%;
+  margin-top: 40px;
+}
+
+.valetbtn{
+  background-color:#fa7268;
+  border-radius:11px;
+  border: 1px solid black;
+  display: flex;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:21px;
+	padding:14px 31px;
+	text-decoration:none;
+  text-shadow:0px 1px 0px #e60566;
+
+  margin-right: -85%;
+  
+
+}
+
+.valetbtn:hover{
+  background-color:#394657;
+}
+
+.valetbtn:active{
+  position:relative;
+	top:1px;
+}
+
+.welcome {
+  content: "";
+  display: flex;
+  align-items: center;
+  height: 85%;
+  width: 100%;
+  justify-content: center;
+
+  flex-direction: column;
+  min-height: 970px;
+  position: relative;
+  z-index: 2;
+
+  aspect-ratio: 900/300;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url("./layer6.svg");
+}
+
+.welcomeTitle {
+  font-size: 40px;
+}
+
+.h2title{
+  font-size: 35px;
+}
+
+.ele {
+  margin: 0;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 970px;
+
+  aspect-ratio: 960/300;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url("./layer1.svg");
+}
+
+.pw {
+  margin: 0;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 970px;
+
+  aspect-ratio: 960/300;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url("./layer4.svg");
+}
+
+.button{
+  background-color:#fa7268;
+  border-radius:11px;
+  border: none;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:21px;
+	padding:14px 31px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #c62367;
+  
+  position: relative;
+  right: 45%;
+  bottom: 38%;
+}
+
+.button:hover{
+
+  background-color:#c62367;
+  border: 1px solid black;
+}
+
+.button:active{
+  position:relative;
+	top:1px;
+}
+
+/*
+to generate waves in css use the websites below
+shape divider
+app.haikei.app
+*/
