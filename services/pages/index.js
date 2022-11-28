@@ -1,57 +1,26 @@
 import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
+import Link from 'next/link'
+import Welcome from '../components/welcomePage'
+import Car from '../components/mainPageCar'
+import PowerWashing from '../components/mainPagePower'
+import Electrician from '../components/mainPageEle'
+import Plumber from '../components/mainPagePlu'
 
 export default function Home() {
   return (
     <div className={styles.container}>
-      {/* <main className={styles.main}>
+      <Welcome/>
 
-        <div className={styles.grid}>
-          <a href="http://localhost:3000/car-wash" className={styles.card}>
-            <h2>Car wash </h2>
-          </a>
-        </div> 
-      </main> */}
+      {/* calling car component from components file */}
+      <Car/>
 
-      <section className={styles.welcome}>
-        <h1 className={styles.welcomeTitle}>
-          Welcome to SERVICES PAGE
-          {/* will change to the correct title later on */}
-        </h1>
-      </section>
+      <PowerWashing/>
 
-      <section className={styles.cw}>
-        <h2>Car wash</h2>
-        <p>
-          This is the car wash section here we will contain link to other page
-          about this topic
-        </p>
-      </section>
+      <Electrician/>
 
-      <section className={styles.pw}>
-        <h2>Power Washing</h2>
-        <p>
-          This is the Power Washing section here we will contain link to other
-          page about this topic
-        </p>
-      </section>
-
-      <section className={styles.ele}>
-        <h2>Electrician</h2>
-        <p>
-          This is the Electrician section here we will contain link to other
-          page about this topic
-        </p>
-      </section>
-
-      <section className={styles.section}>
-        <h2>Plumber</h2>
-        <p>
-          This is the Plumber section here we will contain link to other page
-          about this topic
-        </p>
-      </section>
+      <Plumber/>
     </div>
   );
 }

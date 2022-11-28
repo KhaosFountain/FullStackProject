@@ -157,6 +157,54 @@
   background-image: url("./layer2.svg");
 }
 
+.valet{
+  display: flex;
+  flex-direction: row;
+
+  gap: 200px;
+  
+}
+
+.valettext{
+  text-align: left;
+
+  align-self: center;
+}
+
+.valetimage{
+  width: 900px;
+  height: 500px;
+  margin-left: -17%;
+  margin-top: 40px;
+}
+
+.valetbtn{
+  background-color:#fa7268;
+  border-radius:11px;
+  border: 1px solid black;
+  display: flex;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:21px;
+	padding:14px 31px;
+	text-decoration:none;
+  text-shadow:0px 1px 0px #e60566;
+
+  margin-right: -85%;
+  
+
+}
+
+.valetbtn:hover{
+  background-color:#394657;
+}
+
+.valetbtn:active{
+  position:relative;
+	top:1px;
+}
+
 /* .curve{
   position: absolute;
   height: 225px;
@@ -196,10 +244,9 @@
   justify-content: center;
 
   flex-direction: column;
-  min-height: 700px;
+  min-height: 970px;
   position: relative;
-  z-index: 1;
-  min-height: 900px;
+  z-index: 2;
 
   aspect-ratio: 900/300;
   background-repeat: no-repeat;
@@ -209,6 +256,11 @@
 }
 
 .welcomeTitle {
+  font-size: 40px;
+}
+
+.h2title{
+  font-size: 35px;
 }
 
 .ele {
@@ -218,10 +270,6 @@
   background-position: center;
   background-size: cover;
   background-image: url("./layer1.svg");
-
-  position: relative;
-  text-align: center;
-  min-height: 700px;
 }
 
 .pw {
@@ -239,6 +287,35 @@
   background-position: center;
   background-size: cover;
   background-image: url("./layer4.svg");
+}
+
+.button{
+  background-color:#fa7268;
+  border-radius:11px;
+  border: none;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:21px;
+	padding:14px 31px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #c62367;
+  
+  position: relative;
+  right: 45%;
+  bottom: 38%;
+}
+
+.button:hover{
+
+  background-color:#c62367;
+  border: 1px solid black;
+}
+
+.button:active{
+  position:relative;
+	top:1px;
 }
 
 /*
