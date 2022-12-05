@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import PowerWashingImage from "../styles/PowerWashingImage.jpg"
 
-export default function Car() {
+export default function Power() {
   return (
     <section className={styles.pw}>
       <h2>Power Washing</h2>

@@ -6,7 +6,6 @@ import Link from "next/link";
 export default function home(){
     return (
         <section className={styles.welcome}>
-        <button className={styles.button}>About us</button>
         <h1 className={styles.welcomeTitle}>
           Welcome to SERVICES PAGE
           {/* will change to the correct title later on*/}
