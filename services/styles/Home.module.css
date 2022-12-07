@@ -220,28 +220,12 @@
   background-image: url("./layer2.svg");
 }
 
-/* valet css for the second page */
-
-.valetpage{
-  margin: 0;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  min-height: 970px;
-
-  aspect-ratio: 960/300;
-  width: 100%;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  background-image: url("./layer2.svg");
-}
-
 .valetbox{
   display: flex;
   flex-direction: row;
 
+  position: relative;
+  align-items: center;
   gap: 100px;
   
 }
@@ -281,7 +265,7 @@
   margin-right: -50%;
   margin-top: -7%;
 
-
+  z-index: 1;
 }
 
 .valetbtn:hover{
@@ -291,6 +275,111 @@
 .valetbtn:active{
   position:relative;
 	top:1px;
+}
+
+
+/* css for the navigation bar at the top of second ppage */
+.homeBar {
+  margin: 0;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  gap: 100px;
+
+  align-items: center;
+  min-height: 20px;
+  background-color: #202731;
+}
+
+.homeBarBtn{
+  background-color:#fa7268;
+  border-radius:11px;
+  border: none;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:21px;
+	padding:7px 21px;
+	text-decoration:none;
+  text-shadow:0px 1px 0px #c62367;
+  margin-left: 10px;
+  
+  position: relative;
+  bottom: 38%;
+
+  transition: 100ms;
+}
+
+.homeBarBtn:hover{
+
+  background-color:#c62367;
+  transition: 100ms;
+  transform: scale(1.1);
+}
+
+.navBarBtn:active{
+  position:relative;
+	top:1px;
+}
+
+
+.homeBarText{
+  position: relative;
+}
+
+/* css for the secon page  */
+
+.pricePage{
+  margin: 0;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 970px;
+  color: white;
+
+  aspect-ratio: 960/300;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url("./layer2.svg");
+}
+
+.priceBox{
+  display: flex;
+  flex-direction: row;
+  gap:100px;
+
+  position: relative;
+
+  margin-top: 200px;
+}
+
+.priceOpt{
+  display: flex;
+  flex-direction: column;
+
+  width: 40%;
+  transition: 0.2s;
+
+  height: 400px;
+
+  border: 1px solid black;
+
+}
+
+.priceOpt:hover{
+
+box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transform: scale(1.2);
+
+}
+
+.pricePageImage{
+  width: 300px;
+  height: 200px;
 }
 
 
